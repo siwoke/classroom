@@ -5,7 +5,8 @@
 
 typedef int ElementType;
 typedef struct LNode List;
-struct LNode{
+struct LNode
+{
 	ElementType Data[MAXSIZE];
 	int Last;
 };
@@ -15,19 +16,19 @@ struct LNode L;
 List MakeEmpty()
 {
 	List *Ptrl;
-	Ptrl = (List*)malloc(sizeof(struct LNode));
+	Ptrl = (List *)malloc(sizeof(struct LNode));
 	Ptrl->Last = -1;
-	return *Ptrl;	
+	return *Ptrl;
 }
 void f(int x)
 {
-	return;	
+	return;
 }
 
-
-int main(){
+int main()
+{
 	int a = 10;
 	f(a);
-	
+
 	return 0;
 }
